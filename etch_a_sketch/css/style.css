@@ -1,6 +1,10 @@
 .container {
-	width: 480px;
+	width: 482px;
 	margin: 20px auto;
+}
+
+.grid{
+	border: 1px solid black;
 }
 
 .buttons {
@@ -8,24 +12,41 @@
 	overflow: hidden;
 }
 
-#reset {
-	margin-bottom: 10px;
+.buttonArea {
+	height: 49px;
+	padding: none;
+	margin: none;
 	float: left;
 }
 
-#random {
-	margin-bottom: 10px;
+.button {
+	width: 102px;
+	height: 31px;
+	margin: 7px 9px;
+	float: left;
+}
+
+.title {
+	margin: 0;
+	font-size: 10px;
+	font-family: sans-serif;
+}
+
+#numOfSquares {
+	margin-right: 0;
+	width: 56px;
+}
+
+#numOfSquaresButton {
+	margin-left: 0;
+	padding-top: 2.5px;
+	padding-bottom: 2.5px;
+	width: 36px;
+	height: 19px;
 	float: right;
 }
 
-div.square-row {
-	height: 30px;
-}
-
 div.square-row > .square {
-	border: 1px solid black;
-	width: 28px;
-	height: 28px;
 	background-color: white;
 	display: inline-block;
 }
