@@ -91,7 +91,11 @@ $(document).ready(function(){
 	});
 
 	$('#numOfSquaresButton').on('click', function(){
-		widthOfGrid =  $('#numOfSquares').val();
+		var val = $('#numOfSquares').val();
+		while(val < 1 || val > 35){
+			val = prompt("Please enter number between 1 and 35");
+		}
+		widthOfGrid =  val;
 		$('#numOfSquares').val('');
 		makeGrid(widthOfGrid);
 	});
